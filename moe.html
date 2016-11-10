@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>moe.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/x-icon" href="http://www.moe.org/wp-content/themes/Thememoe/favicon.ico?=fdsffdf">
+
+        <link rel="stylesheet" href="moe_files/stylesheet.css">
+        <link rel="stylesheet" href="moe_files/stylesheet_002.css">
+        <link rel="stylesheet" href="moe_files/stylesheet_005.css">
+        
+        <link rel="stylesheet" href="moe_files/stylesheet_004.css">
+        <link rel="stylesheet" href="moe_files/stylesheet_003.css">
+        <link rel="stylesheet" href="moe_files/stylesheet_007.css">
+        <link rel="stylesheet" href="moe_files/stylesheet_006.css">
+        
+        <link rel="stylesheet" href="moe_files/bootstrap.css">
+        <link rel="stylesheet" href="moe_files/bootstrap-theme.css">
+        <link rel="stylesheet" href="moe_files/jquery.css">
+        <link rel="stylesheet" href="moe_files/main.css">
+        <link rel="stylesheet" href="moe_files/jquery_003.css">
+        <link rel="stylesheet" type="text/css" href="moe_files/jquery_002.css" media="screen"> 
+        <link href="moe_files/style_002.css" type="text/css" rel="stylesheet">
+        <link href="moe_files/style.css" type="text/css" rel="stylesheet">
+
+	
+
+        <meta property="og:image" content="http://www.moe.org/wp-content/uploads/2014/05/moe-square-logo.jpg">
+        <link rel="dns-prefetch" href="http://s.w.org/">
+		<script src="moe_files/migrate-1.js"></script><script src="moe_files/platform.js" async="" type="text/javascript" id="fbridge-widgetjssdk-v1"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.moe.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script type="text/javascript" src="moe_files/wp-emoji-release.js"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="https://api.w.org/" href="http://www.moe.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.moe.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.moe.org/wp-includes/wlwmanifest.xml"> 
+    <style type="text/css">.fancybox-margin{margin-right:17px;}</style><style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+    <body class="home blog" rel="http://www.moe.org/wp-content/themes/Thememoe"><div style="width: 0px; height: 0px;" id="jquery_jplayer_1" class="jp-jplayer"><img style="width: 0px; height: 0px; display: none;" id="jp_poster_0"><audio preload="auto" id="jp_audio_0"></audio></div>
+    
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="signup" style="display:none;">
+           
+          <!-- Fanbridbe email start -->
+          <script type="text/javascript">
+          (function() {
+              var secure = ("https:" == document.location.protocol);
+              var fb_js_host = (secure ? "https://www.fanbridge.com" : "http://widget-platform.fanbridge.com");
+              window._FBRIDGE_WIDGETS_HOST = fb_js_host;
+              document.write(unescape("%3Ciframe src='" + fb_js_host + "/widget/render/18164' width='450' height='400' frameborder='0' style='overflow:hidden' %3E%3C/iframe%3E"));
+              var p, s, id = 'fbridge-widgetjssdk-v1';
+              p = document.createElement('script'); p.id = id; p.type = 'text/javascript'; p.async = true;
+              p.src = (secure ? "https://ssl.fbridgecdn.net" : "http://static.fbridgecdn.net") + '/js/fb/widget/v1/platform.js?_=' + ((new Date()).getTime());
+              s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(p, s);
+          })();
+          </script><iframe src="http://widget-platform.fanbridge.com/widget/render/18164" style="overflow:hidden" frameborder="0" height="400" width="450"></iframe>     
+          <!-- Fanbridbe email start -->
+
+        </div>
+        <div id="nav" class="header">
+             <a href="http://www.moe.org/"><span class="log_header"></span></a>
+             <ul class="menu"><li id="menu-item-400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-400"><a href="http://www.moe.org/tour/">tour.</a></li>
+<li id="menu-item-170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-170"><a href="http://www.moe.org/news/">news.</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180"><a href="http://www.moe.org/store/">store.</a></li>
+<li id="menu-item-171" class="media_togle menu-item menu-item-type-custom menu-item-object-custom menu-item-171"><a href="http://www.moe.org/photo/">media.</a></li>
+<li id="menu-item-403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-403"><a href="http://www.moe.org/music/">music.</a></li>
+<li id="menu-item-331" class="setlists menu-item menu-item-type-custom menu-item-object-custom menu-item-331"><a href="http://www.moe.org/tour_date/?entry=archive&amp;filter=2016">setlists.</a></li>
+<li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-181"><a href="http://www.moe.org/festival/">festivals.</a></li>
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-411"><a href="http://www.moe.org/band/">band.</a></li>
+</ul>             <span class="line_left_feature"></span>
+             <ul class="log_header_right">
+                <a href="#signup" class="modalshow_auto"><li class="log_cell_feature">
+                  Email Signup
+                </li></a>
+                           <a href="#ancla_efect"><li class="log_cell_feature">FEATURED SHOW</li></a>
+                                <li class="log_cell_share">SHARE
+                    <ul class="social_networks social_share">
+                                            <li class="band_facebook "><a href="https://www.facebook.com/dialog/feed?app_id=472240182906791&amp;redirect_uri=https://www.moe.org&amp;link=www.moe.org/&amp;picture=http://www.moe.org/wp-content/uploads/2014/05/moe-square-logo.jpg&amp;description=Post&amp;caption=" target="_blanck">band_facebook</a></li>
+                      
+                                            <li class="band_twitter "><a href="https://twitter.com/home?status=http://www.moe.org/" target="_blanck">band_twitter</a></li>
+                    </ul>
+                </li>
+             </ul>
+             <span class="log_menu_movile"></span>
+        </div>
+        	
+	<div class="body_content">
+		<div class="body_banner">
+			<div style="max-width: 100%; margin: 0px auto;" class="bx-wrapper"><div style="width: 100%; overflow: hidden; position: relative; height: 430px;" class="bx-viewport"><ul style="width: 715%; position: relative; transition-duration: 5s; transform: translate3d(-9515px, 0px, 0px);" class="banner_slider"><li class="bx-clone" style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/Screen-Shot-2015-04-09-at-11.jpg">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																																			    	  <span class="title_home_custom">Forgot<br> merch at<br>the show?</span>
+											    									    	
+																							    		<a href="http://moe.merchnow.com/" target="_blank" class="btb_slide"> Purchase Here !!!</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2015/01/merchslider2015-1225x430.jpg');"></div>	
+																			</li>
+									<li style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/moe-halloween-admat-OUTLINE-600x600.jpg">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																							    		<span class="title_home_custom title_one_top">October 28th &amp; 29th <br> The Fillmore in Philadelphia <br> For Tickets see our tourdates page!</span><br>
+											    																							    	  <span class="title_home_custom">Tarantinoe. Halloweenoe.</span>
+											    									    	
+																							    		<a class="modalshow fancybox.iframe btb_slide" href="http://www.youtube.com/embed/8hP67DtCr_w?autoplay=1&amp;controls=0&amp;showinfo=0">PLAY VIDEO</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2014/10/Cemetary_JB_2-1083x430.jpg');"></div>	
+																			</li>
+									<li style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/moe.png">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																							    		<span class="title_home_custom title_one_top">Pre-sale begins 10/18 @ 10 AM EDT <br> &amp; public on-sale begins 10/21</span><br>
+											    																							    	  <span class="title_home_custom">Winter Tour 2017</span>
+											    									    	
+																							    		<a href="http://www.moe.org/ticketing/" target="_blank" class="btb_slide">Purchase tickets !!!</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2016/01/new.jpg');"></div>	
+																			</li>
+									<li style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/moe-admat-for-NYE-600x600.jpg">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																							    		<span class="title_home_custom title_one_top">12/30 &amp; 12/31 ~ NEW YEARS EVE RUN</span><br>
+											    																							    	  <span class="title_home_custom">The Wilma ~ Missoula, MT</span>
+											    									    	
+																							    		<a href="http://www.moe.org/ticketing/" target="_blank" class="btb_slide">Purchase Tickets !!!</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2016/01/slider11.jpg');"></div>	
+																			</li>
+									<li style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/12244640_923378187699057_639079599998623618_o-600x600.png">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																							    		<span class="title_home_custom title_one_top">get all 3 shows</span><br>
+											    																							    	  <span class="title_home_custom">save 15% on all of moe.'s sound-boards from Summer Camp</span>
+											    									    	
+																							    		<a href="http://www.livedownloads.com/packages/2,635/moe-mp3-flac-download-Summer-Camp-2016.html" target="_blank" class="btb_slide">Purchase here !!!</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2016/04/13416950_10154231312737438_5126878467725575533_o1.jpg');"></div>	
+																			</li>
+									<li style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/Screen-Shot-2015-04-09-at-11.jpg">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																																			    	  <span class="title_home_custom">Forgot<br> merch at<br>the show?</span>
+											    									    	
+																							    		<a href="http://moe.merchnow.com/" target="_blank" class="btb_slide"> Purchase Here !!!</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2015/01/merchslider2015-1225x430.jpg');"></div>	
+																			</li>
+					
+			<li class="bx-clone" style="float: left; list-style: outside none none; position: relative; width: 1903px;">
+                 																	<div class="headline-banner-slide">
+
+										    												<img class="image_custom" src="moe_files/moe-halloween-admat-OUTLINE-600x600.jpg">
+										    											    <div class="wrap-text slider-right-settings">		
+
+																							    		<span class="title_home_custom title_one_top">October 28th &amp; 29th <br> The Fillmore in Philadelphia <br> For Tickets see our tourdates page!</span><br>
+											    																							    	  <span class="title_home_custom">Tarantinoe. Halloweenoe.</span>
+											    									    	
+																							    		<a class="modalshow fancybox.iframe btb_slide" href="http://www.youtube.com/embed/8hP67DtCr_w?autoplay=1&amp;controls=0&amp;showinfo=0">PLAY VIDEO</a>
+											    												    													
+																								    </div>	
+										    </div>
+										   	<div class="bg_image_slide opacity" style="background-image:url('http://www.moe.org/wp-content/uploads/2014/10/Cemetary_JB_2-1083x430.jpg');"></div>	
+																			</li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+		</div>
+		<div class="group_body_dates">
+			<div class="group_one group_disenio_new">
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									10.28.16&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/the-fillmore-philadelphia-3/">The Fillmore Philadelphia</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/the-fillmore-philadelphia-3/">Philadelphia, PA</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="http://concerts.livenation.com/event/02005057DB95669C" class="tix_home_new" target="_blank">
+																10/28 tickets															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									10.29.16&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/the-fillmore-philadelphia-4/">The Fillmore Philadelphia</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/the-fillmore-philadelphia-4/">Philadelphia, PA</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="http://concerts.livenation.com/event/02005057DB91669A" class="tix_home_new" target="_blank">
+																10/29 tickets															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									12.30.16&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/the-wilma/">The Wilma</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/the-wilma/">Missoula, MT</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   													    				<div class="tix_home_new">
+										    																			                <ul class="list_links">
+														            		<li>
+																				<a href="https://events.applauze.com/events/3167246" target="_blank">
+																					moe.ticketing (GA only)																				</a>
+																			</li>	
+																			<li>
+																				<a href="https://www.ticketfly.com/purchase/event/1227867" target="_blank">
+																					12/30 single day tickets																				</a>
+																			</li>	
+																			<li>
+																				<a href="https://www.ticketfly.com/purchase/event/1228121" target="_blank">
+																					2-day passes (12/30 &amp; 12/31)																				</a>
+																			</li>	
+																		</ul>
+
+										    				</div>											            
+											            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									12.31.16&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/the-wilma-2/">The Wilma</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/the-wilma-2/">Missoula, MT</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   													    				<div class="tix_home_new">
+										    																			                <ul style="display: none;" class="list_links">
+														            		<li>
+																				<a href="https://events.applauze.com/events/3167247" target="_blank">
+																					moe.ticketing (GA only)																				</a>
+																			</li>	
+																			<li>
+																				<a href="https://www.ticketfly.com/purchase/event/1228019" target="_blank">
+																					12/31 single day tickets																				</a>
+																			</li>	
+																			<li>
+																				<a href="https://www.ticketfly.com/purchase/event/1228121" target="_blank">
+																					2-day passes (12/30 &amp; 12/31)																				</a>
+																			</li>	
+																		</ul>
+
+										    				</div>											            
+											            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									01.19.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/jam-cruise-pre-party-at-revolution-live/">Jam Cruise Pre-Party at Revolution Live</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/jam-cruise-pre-party-at-revolution-live/">Fort Lauderdale, FL</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="http://www.ticketmaster.com/official-precruise-show-ft-lauderdale-florida-01-19-2017/event/0D005094DE82ACD2?artistid=780809&amp;majorcatid=10001&amp;minorcatid=1" class="tix_home_new" target="_blank">
+																TIX															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    																   				<span class="fdate_home">
+					    									01.20.17 -					    								</span>
+					    								<span class="fdate_home">
+					    									01.25.17					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/jam-cruise/">Jam Cruise</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/jam-cruise/">Miami, FL</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   			
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									01.26.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/jannus-live/">Jannus Live</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/jannus-live/">St. Petersburg, FL</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   													    				<div class="tix_home_new">
+										    																			                <ul style="display: none;" class="list_links">
+														            		<li>
+																				<a href="https://events.applauze.com/events/3213738" target="_blank">
+																					moe.ticketing																				</a>
+																			</li>	
+																			<li>
+																				<a href="http://www.axs.com/events/326955/moe-tickets" target="_blank">
+																					public on-sale 10/21 at 10am																				</a>
+																			</li>	
+																		</ul>
+
+										    				</div>											            
+											            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									01.27.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/the-plaza-live-2/">The Plaza Live</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/the-plaza-live-2/">Orlando, FL</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="https://www.ticketfly.com/purchase/event/1356083" class="tix_home_new" target="_blank">
+																tickets															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									01.28.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/georgia-theatre/">Georgia Theatre</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/georgia-theatre/">Athens, GA</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="https://www.ticketfly.com/purchase/event/1358345" class="tix_home_new" target="_blank">
+																TICKETS															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									01.31.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/bijou-theatre-2/">Bijou Theatre</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/bijou-theatre-2/">Knoxville, TN</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="http://www.ticketmaster.com/an-evening-with-moe-knoxville-tennessee-01-31-2017/event/1B00514DF1E29015?artistid=780809&amp;majorcatid=10001&amp;minorcatid=1&amp;ab=reloaded" class="tix_home_new" target="_blank">
+																tickets															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="background-color: rgb(223, 77, 47);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									02.03.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/higher-ground-ballroom-3/">Higher Ground Ballroom</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/higher-ground-ballroom-3/">Burlington, VT</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="https://www.ticketfly.com/purchase/event/1354715" class="tix_home_new" target="_blank">
+																TICKETS															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+								   <div style="border-bottom: medium none; background-color: rgb(224, 95, 64);" class="group_block_left">
+								   		<div class="group_block_content dim_one_home">
+					    											    								<span class="fdate_home">
+					    									02.04.17&nbsp;&nbsp;&nbsp;					    								</span>
+										   										   		</div>
+								   		<div class="group_block_content dim_two ">
+					    					<span class="fdate_home">
+					    					    					    						<a href="http://www.moe.org/tour_date/calvin-theatre-4/">Calvin Theatre</a>
+					    					</span>
+					    										    					<span class="fdate_home fdate_home_loction">
+					    						<a href="http://www.moe.org/tour_date/calvin-theatre-4/">Northampton, MA</a>
+					    					</span>
+								   		</div>
+								   		<div class="group_block_content aling_right" style="float:right;">								   		
+								   														            															<a href="http://www.nbotickets.com/auto_choose_ga.asp?area=373&amp;event=10527" class="tix_home_new" target="_blank">
+																tickets															</a>
+																									            									    												    		
+								   		</div>
+								   </div>  
+					
+				 <a class="bottom_date" href="http://www.moe.org/tour_date/">MORE DATES </a>
+			</div>
+			<div class="group_two">
+				<div class="group_block_right">
+									   		<div class="block_detail back_one">
+				   			<div class="wrapp_content ">
+				   				<h1><a href="http://www.moe.org/news/band-assemble-winter-tour-on-sale-now/">Band, Assemble! Winter Tour on sale now!</a></h1>
+				   				<span class="clock_date">10.21.16</span>
+				   				<p>	moe. is rolling right off Jam Cruise and onto the road! Tickets are on sale now!</p>
+				   				<img class="active_movile" src="moe_files/moe_003.png">
+				   			</div>
+				   		</div>
+				   		<div class="block_detail back_one">
+				   			<div class="wrapp_content">
+				   				<h1><a href="http://www.moe.org/news/warm-up-with-winter-2017-dates/">WARM UP WITH WINTER 2017 DATES!</a></h1>
+				   				<span class="clock_date">10.17.16</span>
+				   				<p>	moe. is rolling right off Jam Cruise with tour dates 
+across FL, GA, TN, VT, MA and AL! Pre-sale for these Jan/Feb dates 
+begins Tuesday, 10/18 at 10am local venue time through moe.ticketing, 
+and public on-sale begins 10/21.</p>
+				   				<img class="active_movile" src="moe_files/moe_002.png">
+				   			</div>
+				   		</div>
+				   		<div class="block_detail back_one">
+				   			<div class="wrapp_content">
+				   				<h1><a href="http://www.moe.org/news/revised-prop-restrictions-for-halloween-shows/">REVISED PROP RESTRICTIONS FOR HALLOWEEN SHOWS</a></h1>
+				   				<span class="clock_date">10.15.16</span>
+				   				<p>	After working in cooperation with the venue and 
+LiveNation headquarters, we were able to get some of the prior 
+limitations on Halloween costume props reduced. See below: Please be 
+advised that there will be restrictions on costume props during our two 
+Halloween shows at the Fillmore Philadelphia. All props must be made out
+ of plastic, […]</p>
+				   				<img class="active_movile" src="moe_files/moe-halloween-admat-OUTLINE-308x196.jpg">
+				   			</div>
+				   		</div>
+				 </div>
+				 <div class="group_block_right float_table disable_movile">
+			   		<div class="block_detail float_cell  back_one no_padding">
+			   			<a href="http://www.moe.org/news/band-assemble-winter-tour-on-sale-now/">
+			   				<img class="img_adapter_movile" src="moe_files/moe_003.png">
+			   			</a>
+			   		</div>
+			   		<div class="block_detail float_cell back_two no_padding">
+			   			<a href="http://www.moe.org/news/warm-up-with-winter-2017-dates/">
+			   				<img class="img_adapter_movile" src="moe_files/moe_002.png">
+			   			</a>
+			   		</div>
+			   		<div class="block_detail float_cell back_three no_padding">
+			   			<a href="http://www.moe.org/news/revised-prop-restrictions-for-halloween-shows/">
+			   				<img class="img_adapter_movile" src="moe_files/moe-halloween-admat-OUTLINE-308x196.jpg">
+			   			</a>
+			   		</div>
+				 </div>
+				 <a class="bottom_news" href="http://www.moe.org/news/">MORE NEWS </a>
+			</div>
+		</div>
+		<div class="link_home">
+			<a class="bottom_date" href="http://www.moe.org/tour_date/">MORE DATES </a>
+			<a class="bottom_news" href="http://www.moe.org/news/">MORE NEWS </a>
+		</div>
+		<div id="ancla_efect" class="block_row_two">
+			<ul class="block_row_content">
+				<li>
+					<h3>LIVE DOWNLOADS FEATURED SHOW</h3>
+					<img src="moe_files/line_songs.png">
+					<h1>10/31/15 ~ The Fillmore ~ Philadelphia, PA</h1>
+					<h4>Need some traveling tunes to Philly this weekend, well we got 
+you covered by taking you back to “a long time ago in a galaxy far, far 
+away”. Well maybe not that far being only a year, but last year’s Star 
+Wars Halloween at the Fillmore was one of the biggest shows to date and 
+if you haven’t already this is without question a “do yourself a favor” 
+download. This show emcompassed 3 varieties of songs that encapsulated 
+the theme perfectly, with moe.’s take on John Williams’ directing the 
+London Symphony Orchestra in his written masterpieces that are some of 
+the most recognizable composed pieces of music in the world, altered 
+Star Wars themed lyrics and puns on moe. originals and new, and debuted 
+covers. Anyone that was at this show will agree if you call moe.’s 
+Halloween Star Wars rock fest was the force, “force is light, light is 
+good, force is good”! Now get ready for this year’s double feature 
+TARANTINOE. HALLOWEENOE.</h4>
+					<a class="buy_it_home" href="http://www.livedownloads.com/live-music/0,13412/moe-mp3-flac-download-10-31-2015-The-Fillmore-Philadelphia-PA.html" target="_blank">
+						BUY IT					</a>
+				</li>
+				<li>
+					<h3>LISTEN NOW</h3>
+					<img class="line_righte_class" src="moe_files/line_song_right.png">
+					<!--<h3 class="line_margin"></h3>-->
+                    					<div tabindex="0" style="overflow: hidden; padding: 0px; width: 569px;" id="id_songs" class="wrapp_list_now jspScrollable">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+											<div style="width: 569px; height: 200px;" class="jspContainer"><div style="padding: 0px; top: 0px; width: 552px;" class="jspPane"><h3 class="line_margin">Set 1</h3><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="0" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_01_Theme_Song_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Theme Song</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="1" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_02_Senator_Palpatine_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Senator Palpatine</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="2" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_03_Mr_Spaceman_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Mr. Spaceman</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="3" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_04_The_Cantina_Song_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>The Cantina Song</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="4" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_05_Cosmik_Debris_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Cosmik Debris</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="5" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_06_Han_Shot_First_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Han Shot First</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="6" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_07_Interstellar_Overdrive_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Interstellar Overdrive</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="7" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d1_08_Hoth_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Hoth</a></div>
+											</div>
+										</h6>
+									</div><h3 class="line_margin">Set 2</h3><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="8" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_01_Imperial_March_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Imperial March</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="9" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_02_Ziggy_Stardust_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Ziggy Stardust</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="10" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_03_Silver_Sun_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Silver Sun</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="11" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_04_Jazz_Wank_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Jazz Wank</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="12" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_05_Buster_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Buster</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="13" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d2_06_Yoda_Little_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Yoda Little</a></div>
+											</div>
+										</h6>
+									</div><h3 class="line_margin">Encore</h3><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="14" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d3_01_Alnouncements_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Alnouncements</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="15" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d3_02_Plane_Crash_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Plane Crash</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="16" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d3_03_Yoda_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Yoda</a></div>
+											</div>
+										</h6>
+									</div><div class="list_now">
+										<h6>
+											<div class="item-song">
+												<div class="play_container"><i class="icon-play play play-toggle" data-song-idx="17" data-audio-url="http://assets.nugs.edgesuite.net/clips/moe151031d3_04_Disco_Wars_c.mp3"></i></div>
+												<div class="song_container">&nbsp;<a>Disco Wars</a></div>
+											</div>
+										</h6>
+									</div></div><div class="jspVerticalBar"><div class="jspCap jspCapTop"></div><div style="height: 200px;" class="jspTrack"><div style="height: 64px;" class="jspDrag"><div class="jspDragTop"></div><div class="jspDragBottom"></div></div></div><div class="jspCap jspCapBottom"></div></div></div></div>
+				</li>
+			</ul>
+			<a href="http://www.livedownloads.com/live-music/3,196/moe-mp3-flac-downloads.html" target="_blank" class="song_fodetail">MORE SHOWS</a>
+		</div>
+	</div>
+        <div class="footer">
+            <div class="group_links">
+                <h5>© 2016 moe. all rights reserved.</h5>
+                <a href="http://www.moe.org/contact-us/">&nbsp;&nbsp;&nbsp;contact us</a>
+                <a class="log_icon_footer" target="_blanck" href="http://www.iconinteract.com/">&nbsp;&nbsp;&nbsp;<img src="moe_files/log_icon.png"></a>
+            </div>
+            <ul class="social_networks"><li id="menu-item-404" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-404"><a target="_blank" href="https://www.facebook.com/moe.org">Facebook</a></li>
+<li id="menu-item-176" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-176"><a target="_blank" href="http://twitter.com/moeperiod">Twitter</a></li>
+<li id="menu-item-177" class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-177"><a target="_blank" href="http://instagram.com/moetheband">Instagram</a></li>
+<li id="menu-item-407" class="you-tube menu-item menu-item-type-custom menu-item-object-custom menu-item-407"><a target="_blank" href="http://www.youtube.com/user/gotmoe">You-tube</a></li>
+<li id="menu-item-179" class="rss menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a target="_blank" href="http://www.moe.org/feed/?post_type=news">Rss</a></li>
+</ul>        </div> 
+        
+        <script src="moe_files/jquery-1.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="moe_files/modernizr-2.js"></script>
+        <script src="moe_files/bootstrap.js"></script>
+        <script src="moe_files/jquery_004.js"></script>
+        <script src="moe_files/jquery_005.js" type="text/javascript"></script>
+        <script src="moe_files/jquery_006.js"></script>
+        <script src="moe_files/jquery.js"></script>
+        <script type="text/javascript" src="moe_files/jquery_002.js"></script>
+        <script src="moe_files/jquery_003.js"></script>
+        <script src="moe_files/jquery_007.js"></script>
+        <script src="moe_files/main.js"></script>
+        <script src="moe_files/media.js"></script>
+        <script src="moe_files/plugins.js"></script>
+
+                    <div style="display:none">
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1028634856;
+	var google_conversion_language = "en";
+	var google_conversion_format = "3";
+	var google_conversion_color = "666666";
+	var google_conversion_label = "hQNXCMCdlQIQ6PG-6gM";
+	var google_conversion_value = 0;
+	/* ]]> */
+	</script>
+	<script type="text/javascript" src="moe_files/conversion.js">
+	</script><img alt="" src="moe_files/a.gif" style="display:none" border="0" height="1" width="1">
+	<noscript>
+	<div style="display:inline; ">
+	<img height="1" width="1" style="border-style:none;;" alt="" src="http://www.googleadservices.com/pagead/conversion/1028634856/?label=hQNXCMCdlQIQ6PG-6gM&amp;guid=ON&amp;script=0"/>
+	</div>
+	</noscript>
+	<script src="moe_files/urchin.js" type="text/javascript">
+	</script>
+	
+	<script type="text/javascript">
+	_uacct = "UA-1261094-3";
+	urchinTracker();
+	</script>
+</div>                <script type="text/javascript" src="moe_files/wp-embed.js"></script>
+    
+
+</body></html>
